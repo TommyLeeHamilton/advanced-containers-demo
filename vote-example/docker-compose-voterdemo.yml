@@ -4,6 +4,8 @@ services:
   vote:
     image: tommyleehamilton/vote:1.0
     command: python app.py
+    deploy:
+      replicas: 2
     ports:
       - "5000:80"
     networks:
@@ -37,8 +39,18 @@ services:
   db:
     image: postgres:9.4
     container_name: db
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
     networks:
       - back-tier
+      
+volumes:
+  db-data:
+  
+ 
 networks:
   front-tier:
   back-tier:
