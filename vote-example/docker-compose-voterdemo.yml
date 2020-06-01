@@ -1,3 +1,6 @@
+####################
+############ SOURCE: https://github.com/dockersamples/example-voting-app
+####################
 version: "3"
 
 services:
@@ -42,14 +45,10 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
-    volumes:
-      - "db-data:/var/lib/postgresql/data"
     networks:
       - back-tier
       
-volumes:
-  db-data:
-  
+ 
  
 networks:
   front-tier:
