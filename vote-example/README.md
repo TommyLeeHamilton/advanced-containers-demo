@@ -4,6 +4,10 @@ Example Voting App
 Getting started
 ---------------
 
+The voting app was not created by me. Source: https://github.com/dockersamples/example-voting-app
+
+All credit, praise, accolades and other goodness should be redirected to the maintainers of https://github.com/dockersamples/example-voting-app, I just put it here to make it easier for me to modify/work with. 
+
 Download [Docker](https://www.docker.com/products/overview). If you are on Mac or Windows, [Docker Compose](https://docs.docker.com/compose) will be automatically installed. On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/). If you're using [Docker for Windows](https://docs.docker.com/docker-for-windows/) on Windows 10 pro or later, you must also [switch to Linux containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
 Run in this directory:
